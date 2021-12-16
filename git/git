@@ -1,0 +1,10 @@
+git stash list
+git stash 
+git pull
+git stash pop
+#manual merge
+git add .
+git commit -m"xx"
+git push
+
+git rebase -i  [startpoint]  [endpoint]前开后闭
