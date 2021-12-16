@@ -1,0 +1,1 @@
+docker run --name jet_dev -d --cap-add SYS_PTRACE --network host --restart always -v /data/jet:/root -w /root ubuntu_dev "/usr/sbin/sshd" "-D" "-p 9991"
