@@ -8,7 +8,7 @@ docker build -t ubuntu_dev -f /path/Dockerfile .
 .是工作目录不是Dockerfile目录
 
 ## 启动容器
-docker run --name gyz_devs -d --cap-add SYS_PTRACE --network host --restart always -v /data/gyz:/root -w /root ubuntu_dev "/usr/sbin/sshd" "-D" "-p 9999"
+docker run --name gyz_dev -d --cap-add SYS_PTRACE --network host --restart always -v /data/gyz:/root -w /root ubuntu_dev "/usr/sbin/sshd" "-D" "-p 9999"
 "/usr/sbin/sshd" "-D" "-p 9991"可以省略
 
 ## 设置密码
